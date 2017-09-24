@@ -1,0 +1,39 @@
+function lastModifStamp (){
+    var newHTML = '<br><br><br>';
+    
+    newHTML += '<div class="bottom">Last modification<br> Dec 12th 2014</div>';
+
+    document.write( newHTML);
+}
+
+function putBottomLogos (){
+    var newHTML = '<br><br><br><div style="float:right;"><br><br>';
+    
+    newHTML += '<a href="http://federation-math.univ-lille1.fr/"><img height="60" src="NWEJM_fichiers/logoFRM.jpg"></a>';
+    newHTML += '&nbsp;<a href="http://smf.emath.fr/"><img height="60" src="NWEJM_fichiers/logoSMF.jpg"></a>';
+    newHTML += '&nbsp;<a href="http://www.wiskgenoot.nl/"><img src="NWEJM_fichiers/logoKWG.jpg" height="60"></a>';
+    newHTML += '&nbsp;<a href="http://www.fields.utoronto.ca"><img src="NWEJM_fichiers/logoFields.jpg" height="60"></a>';
+    
+    newHTML += '</div>';
+    document.write( newHTML);
+}
+
+function myTrim(x) {
+    return x.replace(/^\s+|\s+$/gm,'');
+}
+
+
+
+$(document).ready(function(){
+    $('#AllArticles li').click(function() {
+        var text = $(this).children('.resumecontent');
+        if(text.is(':hidden')){
+            text.slideDown('500');
+            $(this).children('span.bidule').html('-');
+        }
+        else {
+            text.slideUp('300');
+            $(this).children('span.bidule').html('+');
+        }
+    });
+});
