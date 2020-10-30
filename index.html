@@ -48,6 +48,7 @@ MathJax.Hub.Config({
   function displayNextImage() {
   x = (x === images.length - 1) ? 0 : x + 1;
   document.getElementById("imag").src = "NWEJM_fichiers/" + images[x];
+	  alt="loading..";
   document.getElementById("imag").title = comments[x];
   document.getElementById("ImageCaption").innerHTML = comments[x];
   }
@@ -57,8 +58,9 @@ MathJax.Hub.Config({
   }
 
   var images = [], comments = [], x = -1; 
-	
-  images[0] = "forest.jpg"; comments[0] = "Meghalaya";
+
+
+  images[0] = "Cascade_du_déroc[1].JPG"; comments[0] = "Aubrac, France";
   images[1] = "bangladesh.jpg"; comments[1] = "Bangladesh";
   images[2] = "DSC0603.jpg"; comments[2] = "Varanasi, Sebastien Dijols";
   images[3] = "DSC0830.jpg"; comments[3] = "";
@@ -68,7 +70,7 @@ MathJax.Hub.Config({
   images[7] = "DSC1434.jpg"; comments[7] = "Varanasi";
   images[8] = "Traces-001[1].JPG"; comments[8] = "";
   images[9] = "DSC0943.jpg"; comments[9] = "";
-  images[10] = "Cascade_du_déroc[1].JPG"; comments[10] = "Aubrac, France";
+  images[10] = "forest.jpg"; comments[10] = "Meghalaya";
   images[11] = "JAC_0101-001[1].JPG"; comments[11] = "";
   images[12] = "Punck_à_la_fontaine[1].JPG"; comments[12] = "";
   images[13] = "Vallée_d'Ordessa[1].JPG"; comments[13] = "Vallée d'Ordessa";
@@ -135,7 +137,7 @@ MathJax.Hub.Config({
   <div id="bandeaugeneral" class="nav"> <ul>
   <li class="first"><a href="#Top">Top</a></li>
   <li class="middle"><a href="#Research">Research</a></li>
-  <li class="middle"><a href="teaching/teach.html">Old Teaching</a></li>
+  <li class="middle"><a href="teaching/teach.html">Previous Teaching</a></li>
   <li class="middle"><a href="cv/index.html">CV</a></li>
   <li class="last"><a href="links/links.html">Links</a></li>
   </ul></div>
@@ -163,12 +165,12 @@ MathJax.Hub.Config({
 <div class="hdivision">
 
   <div class="imagetournante">
-  <img id="imag" src="forest.jpg" width="300" align="bottom"
+  <img id="imag" src="Cascade_du_déroc[1].JPG" width="300" align="bottom"
          style="padding-left:10px;padding-right:5px;" >
       <br>
       <span id="ImageCaption"
          style="float:none;font-style:oblique;font-size:10pt;">
-        Meghalaya </span>
+        Cascade du Déroc, Aubrac, France </span>
   </div>
 <h2 class="hdivision"> Presentation </h2>
    I am a postdoctoral fellow at <a href="https://ymsc.tsinghua.edu.cn/cn"> Yau Center </a>,Tsinghua University. My mentor is Bin Xu.
