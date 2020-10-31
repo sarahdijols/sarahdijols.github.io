@@ -48,7 +48,7 @@ MathJax.Hub.Config({
   function displayNextImage() {
   x = (x === images.length - 1) ? 0 : x + 1;
   document.getElementById("imag").src = "NWEJM_fichiers/" + images[x];
-	  alt="loading..";
+  document.getElementById("imag").alt="loading..";
   document.getElementById("imag").title = comments[x];
   document.getElementById("ImageCaption").innerHTML = comments[x];
   }
